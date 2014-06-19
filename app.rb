@@ -1,7 +1,7 @@
 # Dummy app.
 class App < Sinatra::Base
-  use Rack::Cache, metastore:   Settings.rack_cache_metastore_url,
-                   entitystore: Settings.rack_cache_entitystore_url
+  use Rack::Cache, metastore:   Settings.cache.client,
+                   entitystore: Settings.cache.client
 
   helpers Sinatra::CacheHelpers
 

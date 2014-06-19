@@ -1,5 +1,10 @@
 # Sinatra With Caching
 
+Heroku addons:
+
+* https://devcenter.heroku.com/articles/memcachier
+* https://devcenter.heroku.com/articles/memcachedcloud
+
 ## Cache Gelpers
 
 Set `cache_control` to `:public`, `:max_age` to `duration` and
