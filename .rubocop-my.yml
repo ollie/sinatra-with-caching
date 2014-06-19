@@ -1,0 +1,22 @@
+# Better readibility
+SpaceInsideParens:
+  Enabled: false
+
+# Better readibility
+SpaceInsideBrackets:
+  Enabled: false
+
+# 80 is way too low
+LineLength:
+  Max: 120
+
+# 10 is too low
+MethodLength:
+  Max: 20
+
+# ClassLength:
+#   Max: 200
+
+# Need those
+ClassVars:
+  Enabled: false

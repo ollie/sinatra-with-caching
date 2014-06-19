@@ -1,0 +1,7 @@
+/.yardoc
+/coverage
+/doc
+/log/**/*
+!/log/.keep
+/tmp/**/*
+!/tmp/.keep
