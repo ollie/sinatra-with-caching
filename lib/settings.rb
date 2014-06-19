@@ -6,11 +6,11 @@ ENV['MEMCACHE_PASSWORD'] = ENV['MEMCACHIER_PASSWORD']
 # Settings storage class.
 class Settings
   class << self
-    def memcache_servers
+    def memcached_servers
       ENV['MEMCACHE_SERVERS'].split(',') if ENV['MEMCACHE_SERVERS']
     end
 
-    def memcache_settings
+    def memcached_settings
       {
         username: ENV['MEMCACHE_USERNAME'],
         password: ENV['MEMCACHE_PASSWORD']
@@ -19,8 +19,8 @@ class Settings
 
     def cache
       @cache ||= Cache.new(
-        Settings.memcache_servers,
-        Settings.memcache_settings
+        memcached_servers,
+        memcached_settings
       )
     end
   end
